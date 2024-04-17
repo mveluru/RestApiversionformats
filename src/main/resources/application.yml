@@ -1,0 +1,17 @@
+server:
+  port:
+    8083
+  servlet:
+    context-path: /apiversion
+spring:
+  active:
+    profile: dev
+  application:
+    name: RestApiversionformats
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,env,metrics,heapdump
+user:
+  baseurl: http://localhost:8082/apiversion
